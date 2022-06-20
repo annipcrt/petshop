@@ -1,91 +1,116 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth" lang="es">
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>Petshop</title>
 </head>
 
 <body>
     <header>
-        <section style="background-color: #222222; color: white">
-            <p>Grandes ofertas en comedores</p>
+        <section class="header-ofertas">
+            <p>Grandes ofertas en comederos </p>
             <ul>
                 <li>Español</li>
                 <li>ARG$</li>
             </ul>
         </section>
-        <nav style="background-color: #f0a83e">
-            <img src="img/Logo.png" />
-            <ul>
-                <li><img src="img/pawprint 2.png"><a href="#">Categorías</a></li>
-                <li><img src="img/pawprint 2.png"><a href="#">Pets</a></li>
-                <li><img src="img/pawprint 2.png"><a href="#">Nosotros</a></li>
-                <li><img src="img/pawprint 2.png"><a href="#Contactanos">Contactanos</a></li>
-            </ul>
+        <nav>
+            <img src="img/Logo.png" alt="logo" id="logo" />
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#"><img src="/img/pawprint 2.png">Categorías</a></li>
+                    <li><a href="#"><img src="/img/pawprint 2.png">Pets</a></li>
+                    <li><a href="#"><img src="/img/pawprint 2.png">Nosotros</a></li>
+                    <li><a href="#Contactanos"><img src="/img/pawprint 2.png">Contactanos</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section>
-            <img src="img/Imagen-B.png">
-            <h1>¡Es un placer tenerte aquí!</h1>
-            <h2>¡Comederos en descuento!</h2>
-            <button>COMEDEROS</button>
+        <section class="banner">
+            <div>
+                <h1>¡Es un placer tenerte aquí!</h1>
+                <div class="div-comederos">
+                <p>¡Comederos en descuento!</p>
+                <button>COMEDEROS</button>
+                </div>
+            </div>
         </section>
-        <section>
+        <section class="productos">
             <img src="img/pawprint 1.png">
             <h2>Productos destacados</h2>
-            <p>Comederos - Accesorios - Comida</p>
+            <p class="categorias">Comederos - Accesorios - Comida</p>
+        </section>
+        <section class="catalogo">
             <article>
                 <img src="img/churrasquito.png">
                 <p>Juguete Churrasquito</p>
-                <p>$150</p>
+                <p class="precios">$150</p>
             </article>
             <article>
                 <img src="img/comedero.png">
                 <p>Comedero para perro</p>
-                <p>$250</p>
+                <p class="precios">$250</p>
             </article>
             <article>
                 <img src="img/Huesito.png">
-                <p>Juguete huesito</p>
-                <p>$650</p>
+                <p>Juguete Huesito</p>
+                <p class="precios">$650</p>
             </article>
         </section>
-        <section id="Contactanos">
-            <h2>Contactanos:</h2>
-            <input type="text" placeholder="Nombre y Apellido"><br>
-            <input type="email" placeholder="Ingresa tu correo electrónico"><br>
-            <input placeholder="Teléfono"><br>
-            <button>Resetear</button><button>Enviar</button>
-        </section>
-        <section style="background-color: #f0a83e">
-            <h3><img src="img/enviar-correo 1.png"> Suscríbete para más novedades</h3>
-            <input type="email" placeholder="Ingresa tu correo electrónico">
-            <button>Suscribirme</button>
-        </section>
-        <section>
-            <article>
-                <img src="img/Icono-Ubicación.png">
-                <h3>Localidad</h3>
-                <p>Calle - Provincia</p>
-            </article>
-            <article>
-                <img src="img/Icono-Teléfono.png">
-                <h3>Teléfono</h3>
-                <p>Número de teléfono</p>
-            </article>
-            <article>
-                <img src="img/Icono-email.png">
-                <h3>Correo Electrónico</h3>
-                <p>Dirección de correo</p>
-            </article>
-            <img src="img/Logo.png">
+        <section class="form" id="Contactanos">
+            <form action="">
+                <h2>Contáctanos:</h2>
+                <input type="text" placeholder="Nombre y Apellido"><br>
+                <input type="email" placeholder="Ingresa tu correo electrónico"><br>
+                <input type="text" placeholder="Teléfono"><br>
+                <button class="boton-1">Resetear</button><button class="boton-2">Enviar</button>
+            </form>
         </section>
     </main>
-    <footer style="background-color: #222222; color: white">
+    <footer>
+        <section class="suscripción">
+            <h3> <i class="far fa-envelope"></i> Suscríbete para más novedades</h3>
+            <div>
+            <input type="email" placeholder="Ingresa tu correo electrónico">
+            <button>Suscribirme</button>
+            </div>
+        </section>
+        <section class="main-footer">
+            <img id="logo-dos" src="img/Logo2.png">
+            <article>
+                <img src="/img/Icono-Ubicación.png">
+                <div>
+                    <h3>Localidad</h3>
+                    <p>Calle - Provincia</p></div>
+            </article>
+            <article>
+                <img src="/img/Icono-Teléfono.png">
+                <div>
+                    <h3>Teléfono</h3>
+                    <p>Número de teléfono</p>
+                </div>
+            </article>
+            <article>
+                <img src="/img/Icono-email.png">
+                <div>
+                    <h3>Correo Electrónico</h3>
+                    <p>Dirección de correo</p>
+                </div>
+            </article>
+        </section>
+    <div>
         <p>Todos los derechos reservados - Front End</p>
+    </div>
     </footer>
 </body>
 

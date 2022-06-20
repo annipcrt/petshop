@@ -1,0 +1,404 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    width: 100vw;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+.header-ofertas {
+    background-color: #222222;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vw;
+}
+
+.header-ofertas>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-ofertas>ul>li {
+    padding: 0 0.5vw
+}
+
+/* nav */
+
+nav {
+    background-color: #F0A83E;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 15px;
+    width: 100vw;
+    height: 12vh;
+    padding: 0 1.5vw;
+}
+
+.nav-menu {
+    padding: 0 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav-menu>ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav-menu>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    height: 35%;
+}
+
+/* MAIN */
+
+main {
+    width: 100vw;
+}
+
+.banner {
+    background-image: url(/img/Imagen-B.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #3C2313;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner>div {
+    width: 30vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+h1 {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    padding: 5px;
+    width: 350px;
+}
+
+.banner p {
+    margin: 1.5vh 0;
+    background-color: rgba(127,255,212,0.5);
+}
+
+.banner button {
+    background-color: #F0A83E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    padding: 1.2vh 2vw;
+}
+
+/* productos */
+
+.productos {
+    text-align: center;
+    padding: 4vh 0;
+    line-height: 4vh;
+}
+
+.productos img {
+    padding: 1.5vh 0;
+}
+
+h2 {
+    color:#3C2313;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.categorias {
+    color: #666666;
+    padding: 4vh 0;
+    font-weight: lighter;
+}
+
+/* artículos */
+
+.catalogo {
+    color: #3C2313;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15vw;
+}
+
+.catalogo article {
+    background-color: #FBFAF6;
+    width: fit-content;
+    margin: 10px 0; 
+    padding-bottom: 7px; 
+    text-align: center;}
+
+.precios {
+    color:#F0A83E
+}
+
+/* contáctanos */
+
+.form {
+    text-align: center;
+    margin: 11vh 0;
+}
+
+.form form h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.form form input {
+    font-size: 12px;
+    background-color: #3C2313;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    height: 7vh;
+    width: 55vw;
+    padding: 20px;
+    margin: 1vh;
+}
+
+.form form input::placeholder {
+    color: white
+}
+
+.form button {
+    color: white;
+    font-size: 1rem;
+    margin: 4vh 0.5vw;
+    padding: 5px;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    border-radius: 15px;
+}
+
+.boton-1 {
+    background-color: #8A8787;
+}
+
+.boton-2 {
+    background-color: #F0A83E;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+}
+
+/* suscripción */
+
+.suscripción {
+    background-color: #F0A83E;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    height: auto;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suscripción h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.suscripción>div {
+    display: flex;
+    justify-content: center;
+}
+
+.suscripción>div>input {
+    border: none;
+    border-radius: 15px;
+    height: 5vh;
+    width: 50vw;
+    padding: 10px;
+    margin: auto;
+}
+
+.suscripción div input::placeholder {
+    color: #A0A0A0;
+}
+
+.suscripción>div>button {
+    background-color: #3C2313;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    height: 5vh;
+    border: none;
+    border-radius: 15px;
+}
+
+/* información de contacto */
+
+.main-footer {
+    background-color: #3C2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    padding-top: 15px;
+}
+
+.main-footer>article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.main-footer>article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2vh 2vw;
+}
+
+.main-footer h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.main-footer p {
+    color: #8A8787;
+    font-size: 15px;
+}
+
+
+/* copyright */
+
+footer>div {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 0.5vh 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 460px) {
+
+    .banner {
+        height: 490px;
+        align-items: flex-end;
+    }
+
+    .banner>div {
+        width: 50vw;
+        height: 25vh;
+        display: flex;
+    }
+    
+    .banner p {
+        background-color: transparent;
+    }
+
+    .catalogo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 760px) {
+    .banner>div {
+        width: 33vw;
+        height: 27vh;
+        padding: 15px;
+    }
+
+    .form form input {
+        width: 30vw;
+    }
+
+    .form button {
+        width: 10vw;
+        height: 6vh;
+    }
+
+    .suscripción {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .suscripción>div>input {
+        height: 7vh;
+        width: 30vw;
+    }
+
+    .suscripción>div>button {
+        height: 6vh;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo-dos {
+        position: relative;
+        left: 75%;
+        top: 35%;
+    }
+}
