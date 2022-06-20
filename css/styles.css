@@ -89,7 +89,7 @@ main {
 }
 
 .banner {
-    background-image: url(/img/Imagen-B.png);
+    background-image: url(../img/Imagen-banner.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     color: #3C2313;
